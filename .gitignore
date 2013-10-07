@@ -1,0 +1,8 @@
+/app/config/local
+/app/storage/clockwork
+/bootstrap/compiled.php
+/vendor
+/workbench
+composer.phar
+composer.lock
+.DS_Store

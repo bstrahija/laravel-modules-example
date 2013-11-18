@@ -116,6 +116,7 @@ return array(
 
 		'Clockwork\Support\Laravel\ClockworkServiceProvider',
 		'Creolab\LaravelModules\ServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
 	),
 
 	/*

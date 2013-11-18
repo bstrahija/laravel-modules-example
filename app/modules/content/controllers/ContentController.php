@@ -1,6 +1,6 @@
 <?php namespace App\Modules\Content\Controllers;
 
-use View;
+use App, Entry, View;
 
 /**
  * Content controller
@@ -10,22 +10,33 @@ class ContentController extends \BaseController {
 
 	public function getHome()
 	{
-		return View::make('content::index');
+		$entries = Entry::all();
+
+		return View::make('content::index', array('entries' => $entries));
 	}
 
 	public function getPage($slug)
 	{
-		return View::make('content::page');
+		$entry = Entry::findBySlug($slug);
+
+		if ($entry) return View::make('content::page', compact($entry));
+		else        return App::abort(404, 'Page not found');
 	}
 
 	public function getArticle($slug)
 	{
-		return View::make('content::article');
+		$entry = Entry::findBySlug($slug);
+
+		if ($entry) return View::make('content::article', compact($entry));
+		else        return App::abort(404, 'Article not found');
 	}
 
 	public function getProduct($id)
 	{
-		return View::make('content::product');
+		$entry = Entry::findBySlug($slug);
+
+		if ($entry) return View::make('content::product', compact($entry));
+		else        return App::abort(404, 'Product not found');
 	}
 
 }

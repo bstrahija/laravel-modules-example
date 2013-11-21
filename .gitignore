@@ -4,5 +4,4 @@
 /vendor
 /workbench
 composer.phar
-composer.lock
 .DS_Store

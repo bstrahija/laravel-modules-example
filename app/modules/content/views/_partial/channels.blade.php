@@ -1,4 +1,4 @@
-<h3>Channels</h3>
+<h3>{{ trans('content::navigation.channels') }}</h3>
 
 <hr>
 

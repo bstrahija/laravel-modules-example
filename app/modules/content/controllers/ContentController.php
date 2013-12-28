@@ -33,7 +33,7 @@ class ContentController extends \BaseController {
 
 	public function getProduct($id)
 	{
-		$entry = Entry::findBySlug($slug);
+		$entry = Entry::find($id);
 
 		if ($entry) return View::make('content::product', compact($entry));
 		else        return App::abort(404, 'Product not found');

@@ -30,7 +30,15 @@ class Entry {
 		return $this->entries;
 	}
 
-	function findBySlug($slug)
+	public function find($id)
+	{
+		foreach ($this->entries as $key => $entry)
+		{
+			if ($id == $key) return $entry;
+		}
+	}
+
+	public function findBySlug($slug)
 	{
 		foreach ($this->entries as $entry)
 		{

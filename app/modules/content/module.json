@@ -3,5 +3,6 @@
 	"provider": "App\\Modules\\Content\\ServiceProvider",
 	"include": [
 		"breadcrumbs.php"
-	]
+	],
+	"seeder": "App\\Modules\\Content\\Seeds\\DatabaseSeeder"
 }

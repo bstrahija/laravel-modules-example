@@ -15,6 +15,9 @@ class CreateEntriesTable extends Migration {
 		Schema::create('entries', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('slug');
+			$table->string('title');
+			$table->text('body')->nullable();
 			$table->timestamps();
 		});
 	}

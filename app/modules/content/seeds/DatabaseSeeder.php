@@ -36,6 +36,7 @@ class DatabaseSeeder extends \Seeder {
 				'title' => $title,
 				'slug'  => $slug,
 				'body'  => $faker->text(500),
+				'type'  => 'article',
 			));
 		}
 	}

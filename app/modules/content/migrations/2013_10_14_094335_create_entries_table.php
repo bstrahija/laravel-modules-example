@@ -17,6 +17,7 @@ class CreateEntriesTable extends Migration {
 			$table->increments('id');
 			$table->string('slug');
 			$table->string('title');
+			$table->string('type')->default('page');
 			$table->text('body')->nullable();
 			$table->timestamps();
 		});

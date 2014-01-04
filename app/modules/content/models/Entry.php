@@ -9,8 +9,10 @@ class Entry extends \Eloquent {
 	 * @param  Query  $query
 	 * @return Query
 	 */
-	public static function scopePage($query)
+	public static function scopePage($query, $slug = null)
 	{
+		if ($slug) $query->where('slug', $slug);
+
 		return $query->where('type', 'page');
 	}
 
@@ -19,8 +21,10 @@ class Entry extends \Eloquent {
 	 * @param  Query  $query
 	 * @return Query
 	 */
-	public static function scopeArticle($query)
+	public static function scopeArticle($query, $slug = null)
 	{
+		if ($slug) $query->where('slug', $slug);
+
 		return $query->where('type', 'article');
 	}
 

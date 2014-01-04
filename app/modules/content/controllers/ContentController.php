@@ -17,7 +17,7 @@ class ContentController extends \BaseController {
 
 	public function getPage($slug)
 	{
-		$entry = Entry::page()->bySlug($slug)->first();
+		$entry = Entry::page($slug)->first();
 
 		if ($entry) return View::make('content::page', compact('entry'));
 		else        return App::abort(404, 'Page not found');
@@ -32,7 +32,7 @@ class ContentController extends \BaseController {
 
 	public function getArticle($slug)
 	{
-		$entry = Entry::bySlug($slug)->first();
+		$entry = Entry::article($slug)->first();
 
 		if ($entry) return View::make('content::article', compact('entry'));
 		else        return App::abort(404, 'Article not found');

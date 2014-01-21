@@ -1,6 +1,9 @@
 {
 	"enabled":  true,
-	"provider": "App\\Modules\\Content\\ServiceProvider",
+	"provider": [
+		"App\\Modules\\Content\\ContentServiceProvider",
+		"App\\Modules\\Content\\AnotherServiceProvider"
+	],
 	"include": [
 		"breadcrumbs.php"
 	],

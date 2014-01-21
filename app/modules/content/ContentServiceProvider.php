@@ -1,9 +1,11 @@
 <?php namespace App\Modules\Content;
 
-class ServiceProvider extends \Illuminate\Support\ServiceProvider {
+class ContentServiceProvider extends \Illuminate\Support\ServiceProvider {
 
 	public function register()
 	{
+		\Log::debug("AnotherServiceProvider registered");
+
 		// Register facades
 		$this->app->booting(function()
 		{

@@ -58,12 +58,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creolab/laravel-modules.git",
-                "reference": "42ac72308b3ba49e8e32a8522c8dee43e6d73ad1"
+                "reference": "28f0e3a6150d9711661ddb8dbb6679a3b7d6adaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creolab/laravel-modules/zipball/42ac72308b3ba49e8e32a8522c8dee43e6d73ad1",
-                "reference": "42ac72308b3ba49e8e32a8522c8dee43e6d73ad1",
+                "url": "https://api.github.com/repos/creolab/laravel-modules/zipball/28f0e3a6150d9711661ddb8dbb6679a3b7d6adaf",
+                "reference": "28f0e3a6150d9711661ddb8dbb6679a3b7d6adaf",
                 "shasum": ""
             },
             "require": {
@@ -90,7 +90,7 @@
                 "laravel",
                 "modules"
             ],
-            "time": "2014-01-04 10:26:03"
+            "time": "2014-01-21 16:29:10"
         },
         {
             "name": "d11wtq/boris",

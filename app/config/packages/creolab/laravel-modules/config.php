@@ -6,7 +6,10 @@ return array(
 	 * The path that will contain our modules
 	 * This can also be an array with multiple paths
 	 */
-	'path' => 'app/modules',
+	'path' => array(
+		'app/modules',
+		'public/addons',
+	),
 
 	/**
 	 * If set to 'auto', the modules path will be scanned for modules

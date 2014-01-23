@@ -1,0 +1,5 @@
+{
+	"enabled":  true,
+	"provider": "App\\Addons\\Backend\\BackendServiceProvider",
+	"order": 200
+}

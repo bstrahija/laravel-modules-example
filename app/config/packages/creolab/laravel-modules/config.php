@@ -6,10 +6,7 @@ return array(
 	 * The path that will contain our modules
 	 * This can also be an array with multiple paths
 	 */
-	'path' => array(
-		'app/modules',
-		'public/addons',
-	),
+	'path' => 'app/modules',
 
 	/**
 	 * If set to 'auto', the modules path will be scanned for modules
@@ -20,7 +17,11 @@ return array(
 	 * In case the auto detect mode is disabled, these modules will be loaded
 	 * If the mode is set to 'auto', this setting will be discarded
 	 */
-	'modules' => array(),
+	'modules' => array(
+		'auth'    => array('enabled' => true),
+		'content' => array('enabled' => false),
+		'shop'    => array('enabled' => true),
+	),
 
 	/**
 	 * Default files that are included automatically for each module
@@ -37,6 +38,6 @@ return array(
 	/**
 	 * Debug mode
 	 */
-	'debug' => true,
+	'debug' => false,
 
 );
